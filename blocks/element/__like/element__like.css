@@ -1,15 +1,12 @@
-.element__like{
-    background-image: url(../../../images/Vector.svg);
-    background-size: cover;
-    height: 19px;
-    width: 22px;
-    margin-left: 37px;
-
-
-
+.element__like {
+	background-image: url(../../../images/Vector.svg);
+	background-size: cover;
+	height: 19px;
+	width: 22px;
+	margin-left: 37px;
 }
 
 .element__like:hover {
-    opacity: 0.5;
+	opacity: 0.5;
 
 }
