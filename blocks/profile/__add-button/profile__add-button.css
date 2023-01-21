@@ -8,6 +8,11 @@
 	text-align: center;
 	text-decoration: none;
 	transition: 0.2s;
+	background-color: #000;
+	background-image: url(../../../images/Vectorplus.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
 }
 
 .profile__add-button:hover {
@@ -18,5 +23,6 @@
 	.profile__add-button {
 		padding: 0;
 		width: 277px;
+		background-size: 16px;
 	}
 }

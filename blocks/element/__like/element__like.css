@@ -4,6 +4,9 @@
 	height: 19px;
 	width: 22px;
 	margin-left: 37px;
+	border: 0;
+	background-color: #fff;
+	cursor: pointer;
 }
 
 .element__like:hover {

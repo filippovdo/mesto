@@ -7,6 +7,6 @@
 
 3. Попап открывается по нажатию кнопки, а закрывается — при клике по крестику.
 
-4. технологии: HTML, CSS, Javascript.
+4. Технологии: HTML, CSS, Javascript.
 
 5. Ссылка на сайт https://filippovdo.github.io/mesto/
