@@ -16,6 +16,7 @@
 	line-height: 22px;
 	border: none;
 	cursor: pointer;
+	margin-top: 22px;
 }
 
 .popup__button:hover {
@@ -23,7 +24,7 @@
 
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1279px) {
 	.popup__button {
 		width: 238px;
 		height: 46px;
