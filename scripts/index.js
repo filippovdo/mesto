@@ -17,13 +17,13 @@ function handleFormSubmit (evt) {
 }
 
 function popupOpen(){
-  popup.classList.toggle('popup_opened');
+  popup.classList.add('popup_opened');
   nameInput.value = profileName.textContent
   jobInput.value = profileText.textContent
 }
 
 function popupClose(){
-  popup.classList.toggle('popup_opened');
+  popup.classList.remove('popup_opened');
 }
 
 formElement.addEventListener('submit', handleFormSubmit);
