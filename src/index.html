@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mesto: базовая функциональность</title>
+
+</head>
+
+<body>
+	<div class="page">
+		<header class="header">
+			<img src="<%=require('./images/logo_w.svg')%>" class="header__logo" alt="логотип">
+		</header>
+		<main class="content">
+			<section class="profile">
+				<div class="profile__avatar">
+
+				</div>
+
+				<div class="profile__info">
+					<h1 class="profile__name">Жак-Ив Кусто</h1>
+					<button type="button" class="profile__edit-button"></button>
+					<p class="profile__text">Исследователь океана</p>
+				</div>
+				<button type="button" class="profile__add-button"></button>
+			</section>
+			<section class="elements">
+			</section>
+		</main>
+		<footer class="footer">
+			<p class="footer__copyright">© 2023 Mesto Russia</p>
+		</footer>
+		<div class="popup popup_profile">
+			<div class="popup__container">
+				<button type="button" class="popup__close"></button>
+				<h2 class="popup__title">Редактировать профиль</h2>
+				<form class="popup__content" name="form">
+					<label class="popup__edit">
+						<input type="text" class="popup__form  popup__form_input_name" id="name" placeholder="Имя"
+							name="formName" required minlength="2" maxlength="40">
+						<span class="popup__form-error name-error"></span>
+					</label>
+					<label class="popup__edit">
+						<input type="text" class="popup__form popup__form_input_about" id="about" placeholder="О себе"
+							name="formAbout" required minlength="2" maxlength="200">
+						<span class="popup__form-error about-error"></span>
+					</label>
+					<button type="submit" class="popup__button">Сохранить</button>
+				</form>
+			</div>
+		</div>
+		<div class="popup popup_new-card">
+			<div class="popup__container">
+				<button type="button" class="popup__close"></button>
+				<h2 class="popup__title">Новое место</h2>
+				<form class="popup__content" name="form">
+					<label class="popup__edit">
+						<input type="text" class="popup__form popup__form_input_name" id="place" placeholder="Название"
+							name="formName" required minlength="2" maxlength="30">
+						<span class="popup__form-error place-error"></span>
+					</label>
+					<label class="popup__edit">
+						<input type="url" class="popup__form popup__form_input_about" id="link"
+							placeholder="Ссылка на картинку" name="formAbout" required>
+						<span class="popup__form-error link-error"></span>
+					</label>
+					<button type="submit" class="popup__button">Создать</button>
+				</form>
+			</div>
+		</div>
+		<div class="popup popup_img">
+			<div class="popup__container popup__container_img">
+				<button type="button" class="popup__close popup__close_img"></button>
+				<figure class="popup__figure">
+					<img class="popup__image" alt="">
+					<figcaption class="popup__label"></figcaption>
+				</figure>
+			</div>
+		</div>
+		<div class="popup popup_avatar">
+			<div class="popup__container">
+				<button type="button" class="popup__close"></button>
+				<h2 class="popup__title">Аватар</h2>
+				<form class="popup__content" name="popup-form-avatar" novalidate>
+					<input type="url" placeholder="Ссылка на картинку" id="input-avatar-link"
+						class="popup__form popup__form_input_about" name="formAbout" value="" required>
+					<span class="input-avatar-link-error popup__span-error">Необходимо заполнить данное поле</span>
+					<button type="submit" class="popup__button">Сохранить</button>
+				</form>
+			</div>
+		</div>
+		<div class="popup popup_delete-card">
+			<div class="popup__container popup__container_delete-card ">
+				<h2 class="popup__title">Вы уверены?</h2>
+				<button type="submit" class="popup__button">Да</button>
+				<button type="button" class="popup__close"></button>
+			</div>
+		</div>
+		<template id="element">
+			<div class="element">
+				<button type="button" class="element__trash"></button>
+				<img class="element__cover" alt="">
+				<div class="element__block">
+					<h2 class="element__title"></h2>
+					<div class="element__like-box">
+						<button id="like" type="button" class="element__like"></button>
+						<p class="element__number-likes">0</p>
+					</div>
+				</div>
+			</div>
+		</template>
+	</div>
+</body>
+
+</html>

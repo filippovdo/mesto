@@ -1,0 +1,15 @@
+.popup__close_img{
+    right: -46px;
+    left: auto;
+}
+    
+.popup__close_img:hover {
+     opacity: 0.6; 
+}
+
+@media screen and (min-width: 320px) and (max-width: 1279px) {
+	.popup__close_img {
+       right: 0px;
+       left: auto;
+	}
+}
